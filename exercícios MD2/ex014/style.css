@@ -1,0 +1,8 @@
+#resposta{ 
+    display: none;
+}
+
+#pergunta:hover > #resposta {
+    display: block;
+    background-color: bisque;
+}
