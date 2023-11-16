@@ -27,5 +27,13 @@ td {
     padding: 3px 40px;
 }
 
+thead, .mid-table, .media-result{
+    background-color: rgb(99, 98, 98);
+    color: whitesmoke;
+}
 
+.mid-table, .subjects{
+    text-align: start;
+    padding: 3px;
+}
 
