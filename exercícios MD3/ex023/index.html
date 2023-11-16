@@ -1,90 +1,210 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Tabelas e suas estruturas</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Tabelas e suas estruturas:</h1>
     <table>
-        <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-        </tr>
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-        </tr>
-        <tr>
-            <td>Jane</td>
-            <td>Doe</td>
-        </tr>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+      </tr>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+      </tr>
+      <tr>
+        <td>Jane</td>
+        <td>Doe</td>
+      </tr>
     </table>
 
     <p>Tabela com thead, tfoot, e tbody</p>
-<table>
-  <thead>
-    <tr>
-      <th>Header content 1</th>
-      <th>Header content 2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Body content 1</td>
-      <td>Body content 2</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td>Footer content 1</td>
-      <td>Footer content 2</td>
-    </tr>
-  </tfoot>
-</table>
+    <table>
+      <thead>
+        <tr>
+          <th>Header content 1</th>
+          <th>Header content 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Body content 1</td>
+          <td>Body content 2</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Footer content 1</td>
+          <td>Footer content 2</td>
+        </tr>
+      </tfoot>
+    </table>
 
-<p>Tabela com colgroup</p>
-<table>
-  <colgroup span="4"></colgroup>
-  <tr>
-    <th>Countries</th>
-    <th>Capitals</th>
-    <th>Population</th>
-    <th>Language</th>
-  </tr>
-  <tr>
-    <td>USA</td>
-    <td>Washington, D.C.</td>
-    <td>309 million</td>
-    <td>English</td>
-  </tr>
-  <tr>
-    <td>Sweden</td>
-    <td>Stockholm</td>
-    <td>9 million</td>
-    <td>Swedish</td>
-  </tr>
-</table>
+    <p>Tabela com colgroup</p>
+    <table>
+      <colgroup span="4"></colgroup>
+      <tr>
+        <th>Countries</th>
+        <th>Capitals</th>
+        <th>Population</th>
+        <th>Language</th>
+      </tr>
+      <tr>
+        <td>USA</td>
+        <td>Washington, D.C.</td>
+        <td>309 million</td>
+        <td>English</td>
+      </tr>
+      <tr>
+        <td>Sweden</td>
+        <td>Stockholm</td>
+        <td>9 million</td>
+        <td>Swedish</td>
+      </tr>
+    </table>
 
-<p>Tabela com colgroup e col</p>
-<table>
-  <colgroup>
-    <col style="background-color: #0f0" />
-    <col span="2" />
-  </colgroup>
-  <tr>
-    <th>Lime</th>
-    <th>Lemon</th>
-    <th>Orange</th>
-  </tr>
-  <tr>
-    <td>Green</td>
-    <td>Yellow</td>
-    <td>Orange</td>
-  </tr>
-</table>
+    <p>Tabela com colgroup e col</p>
+    <table>
+      <colgroup>
+        <col style="background-color: #0f0" />
+        <col span="2" />
+      </colgroup>
+      <tr>
+        <th>Lime</th>
+        <th>Lemon</th>
+        <th>Orange</th>
+      </tr>
+      <tr>
+        <td>Green</td>
+        <td>Yellow</td>
+        <td>Orange</td>
+      </tr>
+    </table>
 
-</body>
+    <h2>Tabelas de desafios</h2>
+    <p>
+      Nessa parte do exercicio, iremos aplicar os conhecimentos que foram
+      passados:
+    </p>
+
+    <table>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td rowspan="2">3</td>
+        <td>4</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+
+      <tr>
+        <td colspan="3">8</td>
+        <td>9</td>
+      </tr>
+
+      <tr>
+        <td rowspan="2">10</td>
+        <td colspan="2">11</td>
+        <td>12</td>
+      </tr>
+
+      <tr>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+      </tr>
+    </table>
+    <br />
+    <table>
+      <tr>
+        <td colspan="4">A</td>
+        <td rowspan="4">B</td>
+      </tr>
+
+      <tr>
+        <td rowspan="4">C</td>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+      </tr>
+
+      <tr>
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
+      </tr>
+
+      <tr>
+        <td>J</td>
+        <td>L</td>
+        <td>M</td>
+      </tr>
+
+      <tr>
+        <td colspan="4">N</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <table>
+      <tr>
+        <th>Grupo</th>
+        <th scope="col">Nomes</th>
+        <th colspan="3" scope="col">Filmes</th>
+      </tr>
+
+      <tr>
+        <th rowspan="3" scope="rowgroup">Mulheres</th>
+        <td>Ana Maria</td>
+        <td>Alien</td>
+        <td>Rambo</td>
+        <td>Vingadores</td>
+      </tr>
+      <tr>
+        <td>Beatriz Souza</td>
+        <td>Hulk</td>
+        <td>Inception</td>
+        <td>Batman</td>
+      </tr>
+
+      <tr>
+        <td>Cláudia Melo</td>
+        <td>Oblivion</td>
+        <td>Matrix</td>
+        <td>Big Hero</td>
+      </tr>
+
+      <tr>
+        <th rowspan="3" scope="rowgroup">Homens</th>
+        <td>Bruno Mendonça</td>
+        <td>Intocáveis</td>
+        <td>Amnésia</td>
+        <td>Gladiador</td>
+      </tr>
+
+      <tr>
+        <td>Daniel Lourenço</td>
+        <td>Wall-E</td>
+        <td>Oldboy</td>
+        <td>Dangal</td>
+      </tr>
+
+      <tr>
+        <td>Pedro Rodrigues</td>
+        <td>Interestelar</td>
+        <td>Ilha do Medo</td>
+        <td>Drive</td>
+      </tr>
+    </table>
+  </body>
 </html>
