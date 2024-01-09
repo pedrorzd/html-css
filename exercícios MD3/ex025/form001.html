@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap');
+
+        *{
+            font-family: 'Roboto', sans-serif;
+            color: rgb(241, 232, 232);
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            background-image: linear-gradient(120deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 38%, rgba(0,212,255,1) 100%);
+            background-repeat: no-repeat;
+        }
+        
+        input{
+            border-radius: 5px;
+        }
+
+        #button{
+            background-color: rgba(9,9,121,1);
+            font-family: 'Roboto', sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form id="form" action="">
+        <p>
+            <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome">
+        </p>
+
+        <p>
+            <label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+
+        <p>
+            <input id="button" type="submit" value="Enviar">
+        </p>
+
+    </form>
+</body>
+</html>
