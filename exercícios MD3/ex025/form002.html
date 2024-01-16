@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 02</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap');
+
+        *{
+            font-family: 'Roboto', sans-serif;
+            color: rgb(241, 232, 232);
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            background-image: linear-gradient(120deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 38%, rgba(0,212,255,1) 100%);
+            background-repeat: no-repeat;
+        }
+        
+        #formulario{
+            padding: 128px 64px;
+            background: rgba(255, 255, 255, 0.098);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(11px);
+            -webkit-backdrop-filter: blur(11px);
+            border: 1px solid rgba(255, 255, 255, 0.098);
+        }
+
+        input{
+            border-radius: 5px;
+        }
+
+        .text{
+            color: black;
+        }
+
+        #first-camp, #second-camp{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #button{
+            background-color: rgba(9,9,121,1);
+            font-family: 'Roboto', sans-serif;
+            padding: 6px 18px;
+            margin:15px;
+            border: 0px;            
+        }
+
+        #button:hover{
+            background-color: rgb(241, 232, 232);
+            color: rgba(9,9,121,1);
+            transform: scale(1.05);
+        }
+
+        p{
+            padding: 0px;
+            display:flex;
+        }
+
+        .button{
+            display: flex;
+            flex-direction:row;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="formulario">
+        <h1>Meu segundo formulário</h1>
+        
+        <form action="form.php" method="get" id="form" action="" autocomplete="off">
+
+            <p id="first-camp">
+                
+                <label for="iusu">Usuário:</label>
+                    <input class="text" type="text" name="nome" id="iusu" required>
+            </p>
+
+            <p id="second-camp">
+                <label for="ipassword">Senha:</label>
+                    <input  class="text" type="password" name="password" id="ipassword" required minlength="8">
+            </p>
+
+            <p class="button">
+                <input id="button" type="submit" value="Enviar">
+            </p>
+            <p class="button">
+                <input id="button" type="reset" value="Apagar">
+            </p>
+
+        </form>
+    </div>
+</body>
+</html>
