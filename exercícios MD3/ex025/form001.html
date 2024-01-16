@@ -23,34 +23,63 @@
             background-repeat: no-repeat;
         }
         
+        #formulario{
+            padding: 128px 64px;
+            background: rgba(255, 255, 255, 0.098);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(11px);
+            -webkit-backdrop-filter: blur(11px);
+            border: 1px solid rgba(255, 255, 255, 0.098);
+        }
+
         input{
             border-radius: 5px;
+        }
+
+        #first-camp, #second-camp{
+            display: flex;
+            flex-direction: column;
         }
 
         #button{
             background-color: rgba(9,9,121,1);
             font-family: 'Roboto', sans-serif;
+            padding: 6px 18px;
+            margin:15px;
+            border: 0px;
         }
 
+        #button:hover{
+            background-color: rgb(241, 232, 232);
+            color: rgba(9,9,121,1);
+            transform: scale(1.05);
+            
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
-    <h1>Meu primeiro formulário</h1>
-    <form id="form" action="">
-        <p>
-            <label for="inome">Nome:</label>
-                <input type="text" name="nome" id="inome">
-        </p>
-
-        <p>
-            <label for="isobrenome">Sobrenome:</label>
-                <input type="text" name="sobrenome" id="isobrenome">
-        </p>
-
-        <p>
-            <input id="button" type="submit" value="Enviar">
-        </p>
-
-    </form>
+    <div id="formulario">
+        <h1>Meu primeiro formulário</h1>
+        
+        <form id="form" action="">
+            <p id="first-camp">
+                <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome">
+            </p>
+            <p id="second-camp">
+                <label for="isobrenome">Sobrenome:</label>
+                    <input type="text" name="sobrenome" id="isobrenome">
+            </p>
+            <p class="button">
+                <input id="button" type="submit" value="Enviar">
+            </p>
+        </form>
+    </div>
 </body>
 </html>
