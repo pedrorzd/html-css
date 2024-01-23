@@ -68,33 +68,36 @@
         .button{
             display: flex;
             flex-direction:row;
+            justify-content: space-around;
         }
 
     </style>
 </head>
 <body>
     <div id="formulario">
-        <h1>Meu segundo formulário</h1>
+        <h1>Faça seu cadastro</h1>
         
         <form action="form.php" method="get" id="form" action="" autocomplete="off">
 
             <p id="first-camp">
                 
                 <label for="iusu">Usuário:</label>
-                    <input class="text" type="text" name="nome" id="iusu" required>
+                    <input class="text" type="text" name="nome" id="iusu" required placeholder="Coloque seu usuário aqui">
             </p>
 
             <p id="second-camp">
                 <label for="ipassword">Senha:</label>
-                    <input  class="text" type="password" name="password" id="ipassword" required minlength="8">
+                    <input  class="text" type="password" name="password" id="ipassword" required minlength="8" placeholder="Coloque sua senha aqui">
             </p>
 
-            <p class="button">
-                <input id="button" type="submit" value="Enviar">
-            </p>
-            <p class="button">
-                <input id="button" type="reset" value="Apagar">
-            </p>
+            <div class="button">
+                <p>
+                    <input id="button" type="submit" value="Enviar">
+                </p>
+                <p>
+                    <input id="button" type="reset" value="Apagar">
+                </p>
+            </div>
 
         </form>
     </div>
