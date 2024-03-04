@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*Tela da impressora */
+body {
+    margin: 25px;
+}
+
+header, footer {
+    display: none;
+}
+
+article {
+    font-family: 'Courier New', Courier, monospace;
+    size: 1em;
+    line-height: 1.5em;
+}
+
+article::after {
+    content: "Esse site foi feito por Pedro Rodrigues e essa notícia não existe.";
+    margin-top: 32px;
+}
